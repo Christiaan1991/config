@@ -1,0 +1,25 @@
+# ingnore everything
+/*
+
+# but not these files 
+!.gitignore
+!.gitconfig
+!.gitconfig-personal
+# !.gitconfig-work
+!.zshrc
+
+# top-to-bottom sequence is important; last match to a file is valid
+# allow scanning into /.config/
+!/.config/
+# disallow everything in /.config/
+/.config/*
+# except these directories
+!/.config/nvim/
+!/.config/zellij/
+!/.config/hypr/
+!/.config/kitty/
+
+# ignore nvim dir contents
+/.config/nvim/*
+# except these directories
+!/.config/nvim/lua/

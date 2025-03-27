@@ -1,0 +1,5 @@
+[includeIf "gitdir:~/Documents/Projects/"]
+    path = .gitconfig-personal
+[user]
+	email = lcpost91@gmail.com
+	name = Christiaan Post

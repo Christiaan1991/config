@@ -1,0 +1,54 @@
+layout {
+    default_tab_template {
+        pane size=1 borderless=true {
+            plugin location="zellij:tab-bar"
+        }
+        children
+        pane size=1 borderless=true {
+            plugin location="zellij:status-bar"
+        }
+    }
+    tab name="Workspace" focus=true {
+        pane {
+            cwd "/home/chris/Documents/"
+            // command "nvim"
+        }
+    }
+    tab name="Configuration" {
+        pane split_direction="vertical" {
+        pane {
+            name "Hyprland Configuration"
+            cwd "/home/chris/.config/hypr"
+            command "nvim"
+            args "."
+        }
+        pane {
+            name "Zellij Configuration"
+            cwd "/home/chris/.config/zellij"
+            command "nvim"
+            args "."
+        }
+        }
+    }
+    tab name="Notes" {
+        pane {
+            name "Notes"
+            cwd "/home/chris/Documents/Innius/notes/"
+            command "nvim"
+            args "."
+        }
+    }
+    tab name="Sprints" {
+        pane {
+            name "Sprints"
+            cwd "/home/chris/Documents/Innius/sprints/"
+            command "nvim"
+            args "."
+        }
+    }
+    tab name="System Process" {
+        pane {
+            command "btop"
+        }
+    }
+}
